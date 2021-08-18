@@ -30,7 +30,7 @@ class Counters extends Component {
 
   handleDecrement = (id) => {
     const counters = this.state.counters.map((counter, idx) => {
-      if (counter.id === id) return { id: idx, value: counter.value - 1 };
+      if ((counter.id === id) && (counter.value > 0)) return { id: idx, value: counter.value - 1 };
       return counter;
     });
     this.setState({ counters: counters });
