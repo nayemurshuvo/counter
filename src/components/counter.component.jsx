@@ -1,12 +1,6 @@
 import React, { Component } from "react"; //imrc
 //cc
 class Counter extends Component {
-  formatCount = () => {
-    if (this.state.counter == 0) return "Zero";
-    return this.state.counter;
-  };
-
-
   render() {
     return (
       <React.Fragment>
