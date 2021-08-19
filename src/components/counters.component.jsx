@@ -12,6 +12,7 @@ class Counters extends Component {
             value={counter.value}
             onIncrement={this.props.onIncrement}
             onDecrement={this.props.onDecrement}
+            onDelete={this.props.onDelete}
           />
         );
       })
